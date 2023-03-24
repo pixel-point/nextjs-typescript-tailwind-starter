@@ -19,8 +19,6 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
-    // TODO: Check if @ pathes work corectly in auto import and webpack
     "paths": {
       "@/*": ["./src/*"]
     }
