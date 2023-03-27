@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:md": "markdownlint --ignore-path .gitignore .",
+    "lint:md:fix": "markdownlint --fix --ignore-path .gitignore .",
     "format": "prettier --write \"**/*.{css,js,jsx,ts,tsx,json}\""
   },
   "dependencies": {
@@ -24,6 +26,7 @@
     "eslint": "^8.36.0",
     "eslint-config-next": "^13.2.4",
     "eslint-config-prettier": "^8.8.0",
+    "markdownlint-cli": "^0.33.0",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^11.2.1",
