@@ -40,5 +40,4 @@ module.exports = {
       xs: { max: '359px' },
     },
   },
-  plugins: [require('tailwindcss-safe-area')],
 };
