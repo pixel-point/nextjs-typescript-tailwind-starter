@@ -1,11 +1,9 @@
-/* eslint-disable global-require */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     container: {
       center: true,
     },
-
     // FIXME: Uncomment this part of the code and the import of "defaultTheme" above, and complete TODOs
     // fontFamily: {
     //   // FIXME: Add font families
