@@ -1,4 +1,8 @@
-// TODO: Since we already have eslintrc.js we should remove this or move this part to eslintrc.js
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ]
 }
