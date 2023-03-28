@@ -3,6 +3,12 @@
 - [+] Update README.md
 - [ ] Add `.editorconfig` https://github.com/calcom/cal.com/blob/main/.editorconfig
 
+## UI
+
+- [ ] Mobile menu
+- [ ] Subscribtion form
+- [ ] Pagination
+
 ## Improvements
 
 - [ ] Move from https://github.com/typicode/husky to https://github.com/toplenboren/simple-git-hooks
