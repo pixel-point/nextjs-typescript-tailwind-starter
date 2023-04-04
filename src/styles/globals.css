@@ -1,26 +1,34 @@
-/* Imported from app/layout.tsx */
-/* Tailwind initialization and import of general website CSS rules */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @import './fonts.css';
 
-/* @layer components {
+@layer components {
   .container {
-    @apply mx-auto;
-  }
-} */
+    /* FIXME: Specify the real "px-" padding */
+    /* FIXME: Specify the max-width "max-w-" by formula: 1920px design content width + padding * 2 */
+    @apply mx-auto w-full;
 
-/* Handy CSS class to prevent Input background color becomes yellow in Chrome on autofill. Works as well with inputs with transparent background  */
-/* https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete */
+    /*
+      FIXME: Specify the real "px-" padding for each breakpoint
+      @screen 2xl {
+        @apply px-;
+      }
+    */
+  }
+}
+
 @layer utilities {
-  .remove-autocomplete-styles {
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus {
-      transition: background-color 5000s;
-    }
+  /*
+    Handy CSS class to prevent Input background color becomes yellow in Chrome on autofill.
+    Works as well with inputs with transparent background.
+
+    https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete
+  */
+  .remove-autocomplete-styles:-webkit-autofill,
+  .remove-autocomplete-styles:-webkit-autofill:hover,
+  .remove-autocomplete-styles:-webkit-autofill:focus {
+    transition: background-color 5000s;
   }
 }
