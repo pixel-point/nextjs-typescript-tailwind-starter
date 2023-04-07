@@ -6,9 +6,19 @@ module.exports = {
     'next/core-web-vitals',
     'prettier',
   ],
-  plugins: ['@typescript-eslint'],
   rules: {
     'no-console': 'error',
     'no-shadow': 'error',
+    'react/jsx-sort-props': [
+      'error',
+      {
+        noSortAlphabetically: true,
+        shorthandLast: true,
+        callbacksLast: true,
+      },
+    ],
+    'react/no-array-index-key': 'warn',
+    'react/no-danger': 'warn',
+    'react/self-closing-comp': 'error',
   },
 };
