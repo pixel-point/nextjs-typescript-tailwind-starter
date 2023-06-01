@@ -1,38 +1,36 @@
-/* eslint-disable global-require */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    container: {
-      center: true,
+    fontFamily: {
+      // FIXME: Add the real project font families, which are imported in the "fonts.css" file,
+      // and give them the human-readable names
+      sans: ['', ...defaultTheme.fontFamily.sans],
+      // FIXME: Remove the "mono" font family, if it is not used in the project
+      mono: ['', ...defaultTheme.fontFamily.mono],
     },
-
-    // FIXME: Uncomment this part of the code and the import of "defaultTheme" above, and complete TODOs
-    // fontFamily: {
-    //   // FIXME: Add font families
-    //   //       Delete "mono" if it isn't needed
-    //   sans: ['', ...defaultTheme.fontFamily.sans],
-    //   mono: ['', ...defaultTheme.fontFamily.mono],
-    // },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      // FIXME: Add colors
-      // Make sure that they are prepared in the Figma and follow the naming primary/secondary/gray-${number}
+      // FIXME: Add colors which are used in the project. Make sure that they are prepared
+      // in the Figma and followed the naming "primary/secondary/gray-${number}"
       // Example of correctly prepared colors in Figma — https://user-images.githubusercontent.com/20713191/143586876-5e834233-9639-4166-9811-b00e63820d98.png
-      // Example of incorrectly prepared colors in Figma — https://user-images.githubusercontent.com/20713191/143586974-6986149f-aee3-450c-a1dd-26e73e3aca02.png
-      // black: '',
-      // white: '',
-      // primary: {
-      //   1: '',
-      // },
-      // secondary: {
-      //   1: '',
-      // },
-      // gray: {
-      //   1: '',
-      // },
+      black: '',
+      white: '',
+      primary: {
+        1: '',
+      },
+      secondary: {
+        1: '',
+      },
+      gray: {
+        1: '',
+      },
     }),
+    // FIXME: Check if the breakpoints ("screens") are correct for the project
     screens: {
       '2xl': { max: '1919px' },
       xl: { max: '1535px' },
@@ -42,5 +40,7 @@ module.exports = {
       xs: { max: '359px' },
     },
   },
-  plugins: [require('tailwindcss-safe-area')],
+  corePlugins: {
+    container: false,
+  },
 };
