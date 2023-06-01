@@ -6,9 +6,11 @@ const Home = () => {
 
 export default Home;
 
-// FIXME: Add real data here
-export const metadata = getMetadata({
-  title: 'Home - Next.js TypeScript Tailwind Starter',
-  description: 'Next.js TypeScript Tailwind Starter',
-  pathname: '/',
-});
+export async function generateMetadata() {
+  // FIXME: Add real data here
+  return getMetadata({
+    title: 'Home - Next.js TypeScript Tailwind Starter',
+    description: 'Next.js TypeScript Tailwind Starter',
+    pathname: '/',
+  });
+}

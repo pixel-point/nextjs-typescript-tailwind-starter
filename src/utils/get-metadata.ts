@@ -3,6 +3,7 @@ type Metadata = {
   description: string;
   pathname: string;
   imagePath?: string;
+  type?: string;
 };
 
 // FIXME: Add an image for displaying on social networks, remember that this image must meet the size of 1200x630
@@ -14,6 +15,7 @@ export default function getMetadata({
   description,
   pathname,
   imagePath = DEFAULT_IMAGE_PATH,
+  type = 'website',
 }: Metadata) {
   const SITE_URL = process.env.NEXT_PUBLIC_DEFAULT_SITE_URL;
   const canonicalUrl = SITE_URL + pathname;
@@ -52,6 +54,7 @@ export default function getMetadata({
           url: imageUrl,
         },
       ],
+      type,
     },
     twitter: {
       card: 'summary_large_image',
