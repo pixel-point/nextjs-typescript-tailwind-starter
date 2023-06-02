@@ -5,6 +5,7 @@
 - [ ] Check lint-staged
 - [ ] Setup initial breakpoints
 - [ ] Add to README.md info about FIXME and TODO comments
+- [ ] Update commitlint scopes
 
 ## UI
 
