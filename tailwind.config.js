@@ -32,12 +32,12 @@ module.exports = {
     }),
     // FIXME: Check if the breakpoints ("screens") are correct for the project
     screens: {
-      '2xl': { max: '1919px' },
-      xl: { max: '1535px' },
+      xl: { max: '1439px' },
       lg: { max: '1279px' },
       md: { max: '1023px' },
       sm: { max: '767px' },
-      xs: { max: '359px' },
+      xs: { max: '639px' },
+      '2xs': { max: '413px' },
     },
   },
   corePlugins: {
