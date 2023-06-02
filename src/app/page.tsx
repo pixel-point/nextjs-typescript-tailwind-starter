@@ -1,10 +1,16 @@
+import getMetadata from '@/utils/get-metadata';
+
 const Home = () => {
-  const aaaa = "Hello World asdf asdf asdf asd fasd fasd fasd fasd fasdf asdf asd asdf asdf asd  asd fasdf";
-  return (
-    <main>
-      <div className="container my-4">Hello World</div><div className="container my-4">Hello World</div><div className="container my-4">Hello World</div>
-    </main>
-  );
+  return <div className="container">Hello World</div>;
 };
 
 export default Home;
+
+export async function generateMetadata() {
+  // FIXME: Add real data here
+  return getMetadata({
+    title: 'Home - Next.js TypeScript Tailwind Starter',
+    description: 'Next.js TypeScript Tailwind Starter',
+    pathname: '/',
+  });
+}
