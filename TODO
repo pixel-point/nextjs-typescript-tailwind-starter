@@ -20,3 +20,4 @@
 - [ ] Unify the styles of different configs
 - [ ] Check if the markdown files need to be formatted by Markdownlint instead of Prettier
 - [ ] Setup Stylelint
+- [ ] Setup Markdownlint
