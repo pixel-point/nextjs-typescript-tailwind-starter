@@ -1,7 +1,7 @@
 ## To-do
 
 - [+] Update README.md
-- [ ] Add `.editorconfig` https://github.com/calcom/cal.com/blob/main/.editorconfig
+- [+] Add `.editorconfig` https://github.com/calcom/cal.com/blob/main/.editorconfig
 - [ ] Check lint-staged
 - [ ] Setup initial breakpoints
 - [ ] Add to README.md info about FIXME and TODO comments
