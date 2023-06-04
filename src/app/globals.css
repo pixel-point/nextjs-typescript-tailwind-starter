@@ -27,6 +27,10 @@
       size-adjust: 77.7%;
     }
   */
+
+  body {
+    @apply antialiased;
+  }
 }
 
 @layer components {
@@ -41,6 +45,11 @@
         @apply px-;
       }
     */
+  }
+
+  .gap-x-grid {
+    /* FIXME: Specify the real grid "gap-x-" for each breakpoint */
+    @apply gap-x-10;
   }
 }
 
