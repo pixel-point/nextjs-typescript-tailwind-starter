@@ -21,5 +21,6 @@ module.exports = {
     'react/no-array-index-key': 'warn',
     'react/no-danger': 'warn',
     'react/self-closing-comp': 'error',
+    'jsx-a11y/alt-text': 'error',
   },
 };
