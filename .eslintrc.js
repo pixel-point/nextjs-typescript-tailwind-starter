@@ -7,6 +7,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    curly: 'error',
     'no-console': 'error',
     'no-shadow': 'error',
     'no-nested-ternary': 'error',
