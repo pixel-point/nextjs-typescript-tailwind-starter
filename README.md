@@ -57,13 +57,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ```text
 ├── public
-│   ├── images — a folder for bitmap images
 ├── src
 │   ├── components
 │   │  ├── pages — React components that are being used specifically on a certain page
 │   │  └── shared — React components that are being used across the whole website
 │   ├── app
 │   ├── svgs — a folder for vector images
+│   ├── images — a folder for bitmap images
 │   ├── lib
 │   ├── types
 ├── next.config.js — Main configuration file for a Next.js site. Read more about it [here](https://nextjs.org/docs/api-reference/next.config.js/introduction)
