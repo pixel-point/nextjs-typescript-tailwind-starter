@@ -1,8 +1,8 @@
 import getMetadata from '@/utils/get-metadata';
 
-const Home = () => {
+function Home() {
   return <div className="container">Hello World</div>;
-};
+}
 
 export default Home;
 

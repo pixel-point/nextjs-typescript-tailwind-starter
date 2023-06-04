@@ -35,6 +35,13 @@ module.exports = {
     'react/no-array-index-key': 'warn',
     'react/no-danger': 'warn',
     'react/self-closing-comp': 'error',
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'function-declaration',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     'jsx-a11y/alt-text': 'error',
   },
 };
