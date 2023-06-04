@@ -10,6 +10,7 @@ module.exports = {
     'no-console': 'error',
     'no-shadow': 'error',
     'no-nested-ternary': 'error',
+    'newline-before-return': 'error',
     'react/jsx-sort-props': [
       'error',
       {
