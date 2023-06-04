@@ -43,5 +43,6 @@ module.exports = {
       },
     ],
     'jsx-a11y/alt-text': 'error',
+    'import/no-extraneous-dependencies': 'error',
   },
 };
