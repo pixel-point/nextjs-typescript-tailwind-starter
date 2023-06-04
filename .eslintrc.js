@@ -9,6 +9,7 @@ module.exports = {
   rules: {
     'no-console': 'error',
     'no-shadow': 'error',
+    'no-nested-ternary': 'error',
     'react/jsx-sort-props': [
       'error',
       {
