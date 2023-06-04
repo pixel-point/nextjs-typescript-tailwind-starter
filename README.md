@@ -64,7 +64,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 │   │  └── shared — React components that are being used across the whole website
 │   ├── app
 │   ├── svgs — a folder for vector images
-│   ├── styles
 │   ├── lib
 │   ├── types
 ├── next.config.js — Main configuration file for a Next.js site. Read more about it [here](https://nextjs.org/docs/api-reference/next.config.js/introduction)
