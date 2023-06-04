@@ -12,6 +12,18 @@ module.exports = {
     'no-shadow': 'error',
     'no-nested-ternary': 'error',
     'newline-before-return': 'error',
+    'no-restricted-exports': [
+      'error',
+      {
+        restrictDefaultExports: {
+          direct: true,
+          named: true,
+          defaultFrom: true,
+          namedFrom: true,
+          namespaceFrom: true,
+        },
+      },
+    ],
     'react/jsx-sort-props': [
       'error',
       {
