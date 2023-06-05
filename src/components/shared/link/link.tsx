@@ -28,14 +28,14 @@ type LinkProps = {
   onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 };
 
-const Link = ({
+function Link({
   className: additionalClassName,
   size,
   theme,
   href,
   children,
   ...props
-}: LinkProps) => {
+}: LinkProps) {
   const linkClassName = clsx(
     styles.transition,
     size && theme && styles.base,
@@ -57,6 +57,6 @@ const Link = ({
       {children}
     </a>
   );
-};
+}
 
 export default Link;

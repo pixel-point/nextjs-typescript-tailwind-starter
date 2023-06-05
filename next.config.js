@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   poweredByHeader: false,
-  trailingSlash: true,
   experimental: {
     appDir: true,
   },
