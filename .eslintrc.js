@@ -16,7 +16,7 @@ module.exports = {
       'error',
       {
         restrictDefaultExports: {
-          direct: true,
+          direct: false,
           named: true,
           defaultFrom: true,
           namedFrom: true,

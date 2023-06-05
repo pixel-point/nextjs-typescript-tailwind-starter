@@ -4,6 +4,7 @@ module.exports = {
       'error',
       {
         restrictDefaultExports: {
+          direct: true,
           named: true,
           defaultFrom: true,
           namedFrom: true,
