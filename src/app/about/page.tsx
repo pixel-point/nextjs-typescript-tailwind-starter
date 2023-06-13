@@ -1,3 +1,8 @@
+import Image from 'next/image';
+
+import nextJsLogo from '@/images/nextjs-logo.png';
+import tailwindCssLogo from '@/images/tailwindcss-logo.png';
+import typeScriptLogo from '@/images/typescript-logo.png';
 import getMetadata from '@/utils/get-metadata';
 
 function About() {
@@ -5,6 +10,11 @@ function About() {
     <section className="py-32">
       <div className="container">
         <div className="mx-auto max-w-[680px] space-y-5">
+          <div className="flex items-center gap-x-3.5">
+            <Image src={nextJsLogo} height={16} width={80} alt="" priority />
+            <Image src={typeScriptLogo} width={20} height={20} alt="" priority />
+            <Image src={tailwindCssLogo} width={30} height={30} alt="" priority />
+          </div>
           <h1 className="text-4xl font-bold">NextJS TypeScript Tailwind Starter 👋</h1>
           <p className="text-lg">
             Welcome to the NextJS TypeScript Tailwind Starter project! This project is designed to
