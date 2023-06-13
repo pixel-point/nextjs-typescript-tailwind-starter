@@ -32,7 +32,6 @@ module.exports = {
     });
     config.module.rules.push({
       test: /(?<!inline)\.svg$/,
-      issuer: /\.(js|jsx|ts|tsx|css)$/,
       use: [
         {
           loader: require.resolve('url-loader'),
