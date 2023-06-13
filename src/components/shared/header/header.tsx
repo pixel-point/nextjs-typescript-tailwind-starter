@@ -9,7 +9,10 @@ function Header() {
   return (
     <>
       <header className="safe-paddings absolute left-0 right-0 top-0 h-[64px]">
-        <nav className="container flex h-full items-center justify-between" aria-label="Global">
+        <nav
+          className="container flex h-full items-center justify-between px-4"
+          aria-label="Global"
+        >
           <Link href="/">
             <Image src={logo} width={90} height={18} alt="NextJS logo" priority />
           </Link>

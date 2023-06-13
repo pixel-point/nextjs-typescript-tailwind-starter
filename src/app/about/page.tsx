@@ -8,7 +8,7 @@ import getMetadata from '@/utils/get-metadata';
 function About() {
   return (
     <section className="py-32">
-      <div className="container">
+      <div className="container sm:px-4">
         <div className="mx-auto max-w-[680px] space-y-5">
           <div className="flex items-center gap-x-3.5">
             <Image src={nextJsLogo} height={16} width={80} alt="" priority />
