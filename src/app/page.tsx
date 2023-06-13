@@ -3,7 +3,7 @@ import getMetadata from '@/utils/get-metadata';
 function Home() {
   return (
     <section className="py-32">
-      <div className="container">
+      <div className="container sm:px-4">
         <div className="mx-auto max-w-[680px] space-y-5">
           <h1 className="text-4xl font-bold">Getting Started 🚀</h1>
           <p className="text-lg">
