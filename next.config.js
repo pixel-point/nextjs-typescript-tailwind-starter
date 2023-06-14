@@ -12,34 +12,19 @@ module.exports = {
           loader: '@svgr/webpack',
           options: {
             svgo: true,
-            svgoConfig: {
-              plugins: [
-                {
-                  name: 'preset-default',
-                  params: {
-                    overrides: {
-                      removeViewBox: false,
-                    },
-                  },
-                },
-                'prefixIds',
-                'removeDimensions',
-              ],
-            },
           },
         },
       ],
     });
     config.module.rules.push({
       test: /(?<!inline)\.svg$/,
-      issuer: /\.(js|jsx|ts|tsx|css)$/,
       use: [
         {
           loader: require.resolve('url-loader'),
           options: {
             limit: 512,
-            publicPath: '/_next/static/images',
-            outputPath: 'static/images',
+            publicPath: '/_next/static/svgs',
+            outputPath: 'static/svgs',
             fallback: require.resolve('file-loader'),
           },
         },

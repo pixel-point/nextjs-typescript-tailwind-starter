@@ -10,7 +10,7 @@ type Metadata = {
 // For example: /images/social-previews/index.jpg
 const DEFAULT_IMAGE_PATH = '';
 
-export default function getMetadata({
+export function getMetadata({
   title,
   description,
   pathname,

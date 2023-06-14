@@ -1,6 +1,7 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require('tailwindcss/defaultTheme');
 
-const config = {
+module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
@@ -43,5 +44,3 @@ const config = {
     container: false,
   },
 };
-
-export default config;

@@ -7,13 +7,13 @@
 - [ ] Add to README.md info about FIXME and TODO comments
 - [ ] Update commitlint scopes
 - [ ] Setup in README.md info about types vs interfaces
-- [ ] Drop `src/utils` dirictory and move files to `src/lib`
+- [+] Drop `src/utils` dirictory and move files to `src/lib`
 
 ## UI
 
-- [ ] Mobile menu
-- [ ] Default page and layout
-- [ ] Add example of Next/Image usage with bitmap and vector images
+- [+] Mobile menu
+- [+] Default page and layout
+- [+] Add example of Next/Image usage with bitmap and vector images
 
 ## Improvements
 
