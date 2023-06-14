@@ -3,7 +3,8 @@ import Image from 'next/image';
 import nextJsLogo from '@/images/nextjs-logo.png';
 import tailwindCssLogo from '@/images/tailwindcss-logo.png';
 import typeScriptLogo from '@/images/typescript-logo.png';
-import getMetadata from '@/utils/get-metadata';
+
+import { getMetadata } from '@/lib/get-metadata';
 
 function About() {
   return (

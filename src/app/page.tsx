@@ -1,4 +1,4 @@
-import getMetadata from '@/utils/get-metadata';
+import { getMetadata } from '@/lib/get-metadata';
 
 function Home() {
   return (
