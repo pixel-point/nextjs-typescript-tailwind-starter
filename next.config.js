@@ -37,8 +37,8 @@ module.exports = {
           loader: require.resolve('url-loader'),
           options: {
             limit: 512,
-            publicPath: '/_next/static/images',
-            outputPath: 'static/images',
+            publicPath: '/_next/static/svgs',
+            outputPath: 'static/svgs',
             fallback: require.resolve('file-loader'),
           },
         },
