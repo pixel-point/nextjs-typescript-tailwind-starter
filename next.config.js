@@ -12,20 +12,6 @@ module.exports = {
           loader: '@svgr/webpack',
           options: {
             svgo: true,
-            svgoConfig: {
-              plugins: [
-                {
-                  name: 'preset-default',
-                  params: {
-                    overrides: {
-                      removeViewBox: false,
-                    },
-                  },
-                },
-                'prefixIds',
-                'removeDimensions',
-              ],
-            },
           },
         },
       ],
