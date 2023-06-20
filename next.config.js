@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   poweredByHeader: false,
-  experimental: {
-    appDir: true,
-  },
+  experimental: {},
   webpack: (config) => {
     const fileLoaderRule = config.module.rules.find((rule) => rule.test?.test?.('.svg'));
 
