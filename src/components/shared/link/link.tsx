@@ -1,3 +1,4 @@
+import type { Route } from 'next';
 import NextLink from 'next/link';
 
 import clsx from 'clsx';
@@ -16,9 +17,16 @@ const styles = {
   theme: {},
 };
 
-type LinkProps = {
+function Link<T extends string>({
+  className: additionalClassName,
+  size,
+  theme,
+  href,
+  children,
+  ...props
+}: {
   className?: string;
-  href: string;
+  href: Route<T> | URL;
   size?: keyof typeof styles.size;
   theme?: keyof typeof styles.theme;
   children: React.ReactNode;
@@ -26,16 +34,7 @@ type LinkProps = {
   target?: string;
   rel?: string;
   onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
-};
-
-function Link({
-  className: additionalClassName,
-  size,
-  theme,
-  href,
-  children,
-  ...props
-}: LinkProps) {
+}) {
   const linkClassName = clsx(
     styles.transition,
     size && theme && styles.base,
@@ -44,7 +43,11 @@ function Link({
     additionalClassName,
   );
 
-  if (href.startsWith('/')) {
+  /*
+    Using next/link component only for internal navigation.
+    https://github.com/vercel/next.js/blob/canary/errors/invalid-href-passed.md
+  */
+  if (href.toString().startsWith('/')) {
     return (
       <NextLink className={linkClassName} href={href} {...props}>
         {children}
@@ -53,7 +56,7 @@ function Link({
   }
 
   return (
-    <a className={linkClassName} href={href} {...props}>
+    <a className={linkClassName} href={href.toString()} {...props}>
       {children}
     </a>
   );
