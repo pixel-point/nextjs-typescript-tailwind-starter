@@ -1,7 +1,6 @@
-import prettierPluginTailwindcss from 'prettier-plugin-tailwindcss';
-
-export default {
+module.exports = {
   printWidth: 100,
+  trailingComma: 'all',
   singleQuote: true,
   importOrder: [
     '^(next)|(next/(.*))$',
@@ -16,5 +15,5 @@ export default {
   ],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
-  plugins: [prettierPluginTailwindcss],
+  plugins: [require('prettier-plugin-tailwindcss')],
 };
