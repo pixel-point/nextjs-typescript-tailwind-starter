@@ -2,7 +2,7 @@ import { getMetadata } from '@/lib/get-metadata';
 
 function Home() {
   return (
-    <section className="py-32">
+    <section className="py-32 px-safe">
       <div className="container sm:px-4">
         <div className="mx-auto max-w-[680px] space-y-5">
           <h1 className="text-4xl font-bold">Getting Started 🚀</h1>

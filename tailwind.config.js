@@ -43,4 +43,8 @@ module.exports = {
   corePlugins: {
     container: false,
   },
+  plugins: [
+    // eslint-disable-next-line import/no-extraneous-dependencies
+    require('tailwindcss-safe-area'),
+  ],
 };

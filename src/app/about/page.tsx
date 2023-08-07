@@ -8,7 +8,7 @@ import { getMetadata } from '@/lib/get-metadata';
 
 function About() {
   return (
-    <section className="py-32">
+    <section className="py-32 px-safe">
       <div className="container sm:px-4">
         <div className="mx-auto max-w-[680px] space-y-5">
           <div className="flex items-center gap-x-3.5">

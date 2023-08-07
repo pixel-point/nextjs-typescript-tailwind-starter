@@ -18,7 +18,8 @@
     "next-sitemap": "^4.1.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.32.4"
+    "sharp": "^0.32.4",
+    "tailwindcss-safe-area": "^0.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
