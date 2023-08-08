@@ -9,8 +9,8 @@
     "start": "next start",
     "type-check": "tsc",
     "lint": "next lint & npm run lint:md",
-    "lint:md": "markdownlint --ignore-path .gitignore .",
-    "lint:md:fix": "markdownlint --fix --ignore-path .gitignore .",
+    "lint:md": "markdownlint --ignore-path .gitignore . --config ./markdownlint-config.js",
+    "lint:md:fix": "markdownlint --fix --ignore-path .gitignore . --config ./markdownlint-config.js",
     "format": "prettier --write \"**/*.{css,js,jsx,ts,tsx,json}\"",
     "prepare": "husky install"
   },
