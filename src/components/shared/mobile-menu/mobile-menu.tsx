@@ -27,7 +27,7 @@ function MobileMenu({ isOpen, onClick }: { isOpen: boolean; onClick: () => void 
       <AnimatePresence>
         {isOpen && (
           <m.nav
-            className="safe-paddings absolute inset-x-0 bottom-0 top-0 z-40 bg-[#fff] bg-opacity-95"
+            className="absolute inset-x-0 bottom-0 top-0 z-40 bg-[#fff] bg-opacity-95 px-safe"
             initial="closed"
             animate="opened"
             exit="closed"
