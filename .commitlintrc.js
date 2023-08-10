@@ -4,7 +4,7 @@ module.exports = {
     'scope-enum': [
       2,
       'always',
-      ['app', 'components', 'images', 'svgs', 'styles', 'utils', 'hooks', 'lib'],
+      ['pages', 'components', 'assets', 'styles', 'hooks', 'lib'],
     ],
   },
 };
