@@ -18,9 +18,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 1. Clone this repository or hit "Use this template" button
 
-```bash
-git clone git@github.com:pixel-point/nextjs-typescript-tailwind-starter.git
-```
+   ```bash
+   git clone git@github.com:pixel-point/nextjs-typescript-tailwind-starter.git
+   ```
 
 2. Install dependencies
 
