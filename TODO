@@ -18,7 +18,7 @@
 ## Improvements
 
 - [ ] Move from https://github.com/typicode/husky to https://github.com/toplenboren/simple-git-hooks
-- [ ] Set up correctly https://github.com/mvllow/tailwindcss-safe-area
+- [+] Set up correctly https://github.com/mvllow/tailwindcss-safe-area
 - [+] Monitor the use of ESLint and migrate rules from the old config https://github.com/pixel-point/nextjs-tailwind-starter/blob/main/.eslintrc.js
 - [ ] Unify the styles of different configs
 - [ ] Check if the markdown files need to be formatted by Markdownlint instead of Prettier
