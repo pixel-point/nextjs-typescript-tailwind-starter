@@ -28,12 +28,6 @@ git clone git@github.com:pixel-point/nextjs-typescript-tailwind-starter.git
 npm install
 ```
 
-3. Update the git hooks
-
-```bash
-npm run prepare
-```
-
 ## Usage
 
 ```bash

@@ -10,7 +10,7 @@
     "type-check": "tsc",
     "lint": "next lint",
     "format": "prettier --write \"**/*.{css,js,jsx,ts,tsx,json}\"",
-    "prepare": "npx simple-git-hooks"
+    "update-git-hooks": "npx simple-git-hooks"
   },
   "dependencies": {
     "framer-motion": "^10.15.0",
