@@ -8,7 +8,9 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "next lint",
+    "lint": "next lint & npm run lint:md",
+    "lint:md": "markdownlint --ignore-path .gitignore . --config ./markdownlint-config.js",
+    "lint:md:fix": "markdownlint --fix --ignore-path .gitignore . --config ./markdownlint-config.js",
     "format": "prettier --write \"**/*.{css,js,jsx,ts,tsx,json}\"",
     "update-git-hooks": "npx simple-git-hooks"
   },
@@ -37,6 +39,7 @@
     "eslint-config-prettier": "^8.8.0",
     "file-loader": "^6.2.0",
     "lint-staged": "^13.2.3",
+    "markdownlint-cli": "^0.35.0",
     "postcss": "^8.4.27",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^12.0.0",
