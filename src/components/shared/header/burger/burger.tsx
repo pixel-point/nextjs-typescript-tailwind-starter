@@ -30,13 +30,16 @@ function Burger({
             variants={{
               initial: {
                 top: 4,
-                display: 'block',
-                transition: { duration: ANIMATION_DURATION, delay: ANIMATION_DURATION },
+                opacity: 1,
+                transition: {
+                  top: { duration: ANIMATION_DURATION, delay: ANIMATION_DURATION },
+                  opacity: { duration: 0, delay: ANIMATION_DURATION },
+                },
               },
               toggled: {
-                top: 9,
+                top: 13,
                 transition: { duration: ANIMATION_DURATION },
-                transitionEnd: { display: 'none' },
+                transitionEnd: { opacity: 0 },
               },
             }}
           />
@@ -44,12 +47,12 @@ function Burger({
             className="absolute right-0 top-[13px] block h-0.5 w-7 rounded-full bg-[#000] transition-colors duration-200"
             variants={{
               initial: {
-                display: 'block',
-                transition: { delay: ANIMATION_DURATION },
+                opacity: 1,
+                transition: { duration: 0, delay: ANIMATION_DURATION },
               },
               toggled: {
-                display: 'none',
-                transition: { delay: ANIMATION_DURATION },
+                opacity: 0,
+                transition: { duration: 0, delay: ANIMATION_DURATION },
               },
             }}
           />
@@ -58,43 +61,58 @@ function Burger({
             variants={{
               initial: {
                 bottom: 4,
-                display: 'block',
-                transition: { duration: ANIMATION_DURATION, delay: ANIMATION_DURATION },
+                opacity: 1,
+                transition: {
+                  bottom: { duration: ANIMATION_DURATION, delay: ANIMATION_DURATION },
+                  opacity: { duration: 0, delay: ANIMATION_DURATION },
+                },
               },
               toggled: {
-                bottom: 9,
+                bottom: 13,
                 transition: { duration: ANIMATION_DURATION },
-                transitionEnd: { display: 'none' },
+                transitionEnd: { opacity: 0 },
               },
             }}
           />
           <m.span
-            className="absolute right-0 top-3.5 hidden h-0.5 w-7 rounded-full bg-[#000] transition-colors duration-200"
+            className="absolute right-0 top-3.5 h-0.5 w-7 rounded-full bg-[#000] opacity-0 transition-colors duration-200"
             variants={{
               initial: {
                 rotate: '0deg',
-                transition: { duration: ANIMATION_DURATION },
-                transitionEnd: { display: 'none' },
+                opacity: 0,
+                transition: {
+                  rotate: { duration: ANIMATION_DURATION },
+                  opacity: { duration: 0, delay: ANIMATION_DURATION },
+                },
               },
               toggled: {
-                display: 'block',
+                opacity: 1,
                 rotate: '45deg',
-                transition: { duration: ANIMATION_DURATION, delay: ANIMATION_DURATION },
+                transition: {
+                  rotate: { duration: ANIMATION_DURATION, delay: ANIMATION_DURATION },
+                  opacity: { duration: 0, delay: ANIMATION_DURATION },
+                },
               },
             }}
           />
           <m.span
-            className="absolute right-0 top-3.5 hidden h-0.5 w-7 rounded-full bg-[#000] transition-colors duration-200"
+            className="absolute right-0 top-3.5 h-0.5 w-7 rounded-full bg-[#000] opacity-0 transition-colors duration-200"
             variants={{
               initial: {
                 rotate: '0deg',
-                transition: { duration: ANIMATION_DURATION },
-                transitionEnd: { display: 'none' },
+                opacity: 0,
+                transition: {
+                  rotate: { duration: ANIMATION_DURATION },
+                  opacity: { duration: 0, delay: ANIMATION_DURATION },
+                },
               },
               toggled: {
-                display: 'block',
+                opacity: 1,
                 rotate: '-45deg',
-                transition: { duration: ANIMATION_DURATION, delay: ANIMATION_DURATION },
+                transition: {
+                  rotate: { duration: ANIMATION_DURATION, delay: ANIMATION_DURATION },
+                  opacity: { duration: 0, delay: ANIMATION_DURATION },
+                },
               },
             }}
           />
