@@ -28,12 +28,6 @@ export function getMetadata({
     alternates: {
       canonical: canonicalUrl,
     },
-    viewport: {
-      width: 'device-width',
-      initialScale: 1,
-      maximumScale: 1,
-      viewportFit: 'cover',
-    },
     // FIXME: Generate favicons with Favpie - https://github.com/pixel-point/favpie
     // manifest: `${SITE_URL}/manifest.json`,
     // icons: {
