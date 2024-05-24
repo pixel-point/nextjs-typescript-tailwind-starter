@@ -13,7 +13,7 @@
     "lint:md:fix": "markdownlint --fix --ignore-path .gitignore . --config ./markdownlint-config.js",
     "format": "prettier --write \"**/*.{css,js,jsx,ts,tsx,json}\"",
     "update-git-hooks": "npx simple-git-hooks",
-    "prepare": "npm run update-git-hooks"
+    "prepare": "git config core.hooksPath .hooks"
   },
   "dependencies": {
     "framer-motion": "^11.1.7",
