@@ -1,0 +1,2 @@
+#!/bin/sh
+npx --no-install lint-staged --concurrent false && npm run type-check
