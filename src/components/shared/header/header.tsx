@@ -44,7 +44,7 @@ function Header() {
             <Link
               className="transition-opacity duration-200 hover:opacity-75"
               href="https://github.com/pixel-point/nextjs-typescript-tailwind-starter"
-              target="__blank"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <GitHubIcon className="h-6" />
